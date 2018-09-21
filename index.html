@@ -10,52 +10,7 @@
   <meta name="keywords" content="HTML, CSS, Projects">
   <meta name="author" content="Caleb Bolton">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-body {
-    background-color: rgb(12, 112, 123);
-}
-h1 {
-    color: white; 
-    text-align: center; 
-    font-size:55px; 
-    font-family: "Trebuchet MS";
-}
-    
-h2 {
-    color: white;
-    text-align: center;
-    font-size: 40px;
-    font-family: "Trebuchet MS";
-}
-  
-h3 {
-    color: white;
-    text-align: center;
-    font-size: 20px;
-    font-family: "Trebuchet MS";
-}
-p {
-    color: white; 
-    text-align: center; 
-    font-size:20px; 
-    font-family: "Trebuchet MS";
-}
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20%
-}
-section.profile{
-    border: 2px dashed White; 
-    width: 50%;
-    min-width: 500px;
-    max-width: 500px;
-    margin: auto; 
-    background-color: rgb(62, 162, 173);
-}
-    
-</style>
+  <link href="css_file.css" rel="stylesheet" type="text/css">
 </head>
 
 
@@ -63,30 +18,29 @@ section.profile{
 
 <body>
 <section class="profile">
-<h1>Hi, I'm Caleb</h1>
-<img src="ProfilePicture.png" alt="A picture of Caleb" class="center">
+  <span><h1 class="main-title">Hi, I'm</h1> <span style="text-decoration: underline" class="main-title">Caleb</span></span>
+<img src="ProfilePicture.png" alt="A picture of Caleb" class="profile-picture">
 <p>I am a third-year Computer Science major at UC Davis <br> pursuing a software engineering internship.</p>
 </section>
 <section style="border: 2px dashed White; width: 95%; margin-left: auto; margin-right: auto; margin-top: 10px">
-    <h2>Projects</h2>
+    <h2>Personal Projects</h2>
     <table style="width: 100%;">
       <tr>    
-        <td>
-          <a href="https://github.com/AstroBolt/Bubble-Catch">
-            <section>
+        <td style="width: 50%;">
+            <section class="project-preview">
+              <a href="https://github.com/AstroBolt/Bubble-Catch">
               <h3>Bubble Catch</h3>
-              <img src="BubbleCatch.png" style="width: 400px;" class="center">
+                <img src="BubbleCatch.png" class="project-preview-image">
+              </a>
             </section>
-            
-          </a>
         </td>
-        <td>
-          <a href="https://github.com/AstroBolt/Bank">
-            <section>
+        <td style="width: 50%;">
+            <section class="project-preview">
+              <a href="https://github.com/AstroBolt/Bank">
               <h3>Bank</h3>
-              <img src="Bank.png" style="width: 400px;" class="center">
+                <img src="Bank.png" class="project-preview-image">
+              </a>
             </section>
-          </a>
         </td>
       </tr>
   </table>
