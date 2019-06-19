@@ -1,2 +1,2 @@
-# AstroBolt.github.io
+# Caleb-Bolton.github.io
 Personal Website
