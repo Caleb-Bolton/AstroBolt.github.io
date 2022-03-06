@@ -5,8 +5,7 @@
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
 </head>
 
 
@@ -14,28 +13,29 @@
 <body>
   <header>
     <h1 class="logo unselectable">Down?</h1>
+  </header>
+  <main>
     <div class="overview">
       <div class="hook-container">
         <h1 class="hook">Hangouts made easy.</h1>
         <h2 class="purpose">Quickly and easily organize hangouts with your friends.</h2>
+        <div class="download-container">
+          <img class="download-button" src="assets/images/apple-app-store-button.svg">
+          <img class="download-button" src="assets/images/google-play-button.png">
+        </div>
       </div>
       <div class="mock-container">
         <img class="mock mock-left" src="assets/images/feed.png">
         <img class="mock mock-right" src="assets/images/event-chat.png">
       </div>
-      <div class="download-container">
-        <img class="download-button" src="assets/images/apple-app-store-button.svg">
-        <img class="download-button" src="assets/images/google-play-button.png">
-      </div>
     </div>
-  </header>
-  <main>
     <!-- <img class="demo" src="assets/images/down demo v1.gif"> -->
     <p>Want to know when the app hits the appstore?</p>
     <p>Let us know your email so we can contact you!</p>
     <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScI1qD79FDU-_Y04Hs2owmw7GaYgD84QUAiY6VEXvYhqA-3iA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-      <input class="text-box" placeholder="Email" type="text" name="entry.424565911" id="entry.424565911">
-      <input class="button" type="submit" value="Submit">
+      Email:<br>
+      <input type="text" name="entry.424565911" id="entry.424565911">
+      <input type="submit" value="Submit">
     </form>
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
   </main>

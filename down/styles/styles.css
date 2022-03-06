@@ -1,0 +1,107 @@
+html {
+    background-color: #F4F1F7;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4em;
+    display: inline-block;
+    padding: 0 0.03em;
+    color: white
+}
+
+h1, h2 {
+    font-weight:600;
+    color: white;
+}
+
+p {
+    font-weight:600;
+    color: #2b2830;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10em;
+    background-image: linear-gradient(90deg, #3F9FD7, #C46BD7);
+}
+
+.overview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    padding-bottom: 75px;
+    background-image: linear-gradient(90deg, #3F9FD7, #C46BD7);
+}
+
+.hook-container {
+    text-align: left;
+}
+
+.hook {
+    text-align: left;
+    font-size: 3em;
+    font-weight: 300;
+    margin: 0.5em 0;
+}
+
+.purpose {
+    font-size: 1.5em;
+    font-weight: 150;
+}
+
+.download-container {
+    margin: 3em;
+}
+
+.download-button {
+    display: inline-block;
+    height: 50px;
+    margin: 1em
+}
+
+.mock-container {
+    position: relative;
+    margin-right: 100px;
+}
+
+.mock {
+    width: 250px;
+}
+
+.mock-left {
+    position: relative;
+}
+
+.mock-right {
+    position: absolute;
+    left: 80%;
+}
+
+.unselectable {
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+
+}
+
+.gradient {
+    background-color: #3F9FD7;
+    background-image: linear-gradient(90deg, #3F9FD7, #C46BD7);
+    background-size: 100%;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+.demo {
+    width: 50%;
+}
