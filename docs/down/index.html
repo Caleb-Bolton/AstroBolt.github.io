@@ -41,24 +41,36 @@
     </div>
   </header>
   <main>
-    <!-- <img class="demo" src="assets/images/down demo v1.gif"> -->
-    <p>Want to know when the app hits the appstore?</p>
-    <p>Get an email to let you know!</p>
-    <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScI1qD79FDU-_Y04Hs2owmw7GaYgD84QUAiY6VEXvYhqA-3iA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-      <input class="text-box" placeholder="Email" type="text" name="entry.424565911" id="entry.424565911">
-      <input class="button" type="submit" value="Submit">
-    </form>
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+    <div class="email-form">
+      <p>Want to know when the app hits the appstore?</p>
+      <p>Get an email to let you know!</p>
+      <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScI1qD79FDU-_Y04Hs2owmw7GaYgD84QUAiY6VEXvYhqA-3iA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+        <input class="text-box" placeholder="Email" type="text" name="entry.424565911" id="entry.424565911">
+        <input class="primary-button" type="submit" value="Submit">
+      </form>
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+    </div>
   </main>
-</body>
+
+  <div id="email-modal-container" class="modal-container hidden">
+    <div id="email-modal" class="modal-content">
+      <div class="close-button-container">
+        <img src="assets/images/x.svg" class="close-button">
+      </div>
+      <div class="email-form">
+        <p>Want to know when the app hits the appstore?</p>
+        <p>Get an email to let you know!</p>
+        <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScI1qD79FDU-_Y04Hs2owmw7GaYgD84QUAiY6VEXvYhqA-3iA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+          <input class="text-box" placeholder="Email" type="text" name="entry.424565911" id="entry.424565911">
+          <input class="primary-button" type="submit" value="Submit">
+        </form>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+      </div>
+    </div>
+  </div>
 
 <script src="assets/js/jquery.min.js"></script>
 <script type="text/javascript">var submitted=false;</script>
-<script type="text/javascript">
-$('#gform').on('submit', function(e) {
-  $('#gform *').fadeOut(2000);
-  $('#gform').prepend('Your submission has been processed...');
-  });
-</script>
-
+<script src="assets/js/scripts.js"></script>
+</body>
 </html> 
