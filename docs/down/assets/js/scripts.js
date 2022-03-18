@@ -12,18 +12,30 @@ var emailFormContainers = document.querySelectorAll(".email-form-container");
 emailFormContainers.forEach((formContainer) => {
     var submitButton = formContainer.querySelector(":scope .primary-button");
     var form = formContainer.querySelector(":scope form");
-    
+    var closeButton = document.querySelector(":scope .close-button");
+
+    closeButton.addEventListener("click", ()=>{closeModal(popup)});
     submitButton.addEventListener("click", ()=>{
-        form.submit()
-        hideElement(formContainer.querySelector(":scope .email-form"));
-        showElement(formContainer.querySelector(":scope .thank-you"));
+        form.submit();
+        document.querySelectorAll("form .text-box").forEach((textBox) => {textBox.value = ""});
+        document.querySelectorAll(".email-form").forEach((emailForm) => {hideElement(emailForm)});
+        document.querySelectorAll(".thank-you").forEach((thankYou) => {showElement(thankYou)});
     })
 })
 
+function showModal(modal) {
+    showElement(modal);
+    document.body.classList.add("no-scroll");
+}
 
-appStoreButton.addEventListener("click", ()=>{showElement(popup)});
-googlePlayButton.addEventListener("click", ()=>{showElement(popup)});
-closeButton.addEventListener("click", ()=>{hideElement(popup)});
+function closeModal(modal) {
+    hideElement(modal);
+    document.body.classList.remove("no-scroll");
+}
+
+appStoreButton.addEventListener("click", ()=>{showModal(popup)});
+googlePlayButton.addEventListener("click", ()=>{showModal(popup)});
+
 
 popup.addEventListener("click", (event)=>{
     if (!modalContent.contains(event.target)) {

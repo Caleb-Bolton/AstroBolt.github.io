@@ -115,6 +115,21 @@ p {
     grid-row-end: 2;
     color:#2b2830;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.thank-you h2 {
+    color:#2b2830;
+    margin: auto;
+    text-align: center;
+}
+
+.thank-you a {
+    text-align: center;
+    margin: auto;
 }
 
 .email-form {
@@ -135,6 +150,37 @@ p {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.benefits-container {
+
+}
+
+.benefits-list {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.benefits-list li {
+    color:#2b2830;
+    margin: 0.5em;
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+.benefits-list li::before {
+    background-image: url(../assets/images/down-icon.png);
+    background-size: contain;
+    content: "";
+    height: 2.0rem;
+    width: 2.0rem;
+    left: 0;
+    transform: translateY(25%) rotate(-90deg);
+    display: inline-block;
+    filter: brightness(0);
+    margin-right: 0.3em;
 }
 
 .text-box {
@@ -216,6 +262,10 @@ p {
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
+}
+
+.no-scroll {
+    overflow: hidden;
 }
 
 .gradient {
