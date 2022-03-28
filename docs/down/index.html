@@ -46,8 +46,8 @@
         <p>Want to know when the app hits the appstore?</p>
         <p>Get an email to let you know!</p>
         <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScI1qD79FDU-_Y04Hs2owmw7GaYgD84QUAiY6VEXvYhqA-3iA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-          <input class="text-box" placeholder="Email Address" type="text" name="entry.424565911" id="entry.424565911">
-          <div class="primary-button submit-button">
+          <input class="text-box" placeholder="Email Address" type="text" name="entry.424565911" id="entry.424565911" onkeypress="handleTextBoxKeyPress(event)">
+          <div class="primary-button submit-button" onclick="submitClicked(this)">
             Submit
           </div>
         </form>
@@ -59,22 +59,23 @@
         <a href="https://forms.gle/VbrMdTLc7ZiMpqD89">Tell us about your experience organizing hangouts and events</a>
       </div>
     </div>
-    <!-- <div class="benefits-container"> -->
+    <h1 class="key-features-title">Key Features</h1>
     <ul class="benefits-list">
       <li>
         <div class="benefit-container">
           <img src="assets/images/feed.png">
           <div class="bullet-points-container">
-            <p>Get your events feed to quickly see all the hangouts you're invited to</p>
+            <p>See all the hangouts you're invited to in one place</p>
             <p>See the who, what, where, and when of each hangout</p>
+            <p>Show you're down to hangout with the tap of a button</p>
           </div>
         </div>
       </li>
       <li class="dark">
         <div class="benefit-container">
-          <div>
-            <p>Plan hangouts with all of your friends or specific people</p>
-            <p>Host in-person or virtual hangouts via location link</p>
+          <div class="bullet-points-container">
+            <p>Invite all your friends or a specific group</p>
+            <p>Host in-person or virtual hangouts</p>
           </div>
           <img src="assets/images/event-creation.png">
         </div>
@@ -82,8 +83,10 @@
       <li>
         <div class="benefit-container">
           <img src="assets/images/event-chat.png">
-          <div>
-            <p>Have groupchats automatically created for each event</p>
+          <div class="bullet-points-container">
+            <p>Never worry about creating a group chat for each hangout you host</p>
+            <p>Each hangout in Down? has a groupchat with everyone invited already made</p>
+
           </div>
         </div>
       </li>
@@ -101,8 +104,8 @@
           <p>Want to know when the app hits the appstore?</p>
           <p>Get an email to let you know!</p>
           <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScI1qD79FDU-_Y04Hs2owmw7GaYgD84QUAiY6VEXvYhqA-3iA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-            <input class="text-box" placeholder="Email Address" type="text" name="entry.424565911" id="entry.424565911">
-            <div class="primary-button submit-button" type="submit" value="Submit">
+            <input class="text-box" placeholder="Email Address" type="text" name="entry.424565911" id="entry.424565911" onkeypress="handleTextBoxKeyPress(event)">
+            <div class="primary-button submit-button" onclick="submitClicked(this)">
               Submit
             </div>
           </form>

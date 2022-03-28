@@ -11,22 +11,30 @@ var closeButton = document.querySelector("#email-modal .close-button");
 var emailFormContainers = document.querySelectorAll(".email-form-container");
 emailFormContainers.forEach((formContainer) => {
     var submitButton = formContainer.querySelector(":scope .primary-button");
-    var form = formContainer.querySelector(":scope form");
     var closeButton = document.querySelector(":scope .close-button");
 
     closeButton.addEventListener("click", ()=>{closeModal(popup)});
-    submitButton.addEventListener("click", ()=>{
-        form.submit();
-        // Get email from current form
-        var email = formContainer.querySelector(":scope .text-box").value
-        // Prefill questionnaire with email
-        document.querySelectorAll(".thank-you a").forEach((a) => {a.href = "https://docs.google.com/forms/d/e/1FAIpQLSf_CSGif3vEyN7YZrHCj6nCHdGNc9G_fJWHhSwt8e7DMX9GTQ/viewform?usp=pp_url&entry.533643041=" + email;})
-        // Clear email values from all forms and swap forms for thank-you message
-        document.querySelectorAll("form .text-box").forEach((textBox) => {textBox.value = ""});
-        document.querySelectorAll(".email-form").forEach((emailForm) => {hideElement(emailForm)});
-        document.querySelectorAll(".thank-you").forEach((thankYou) => {showElement(thankYou)});
-    })
 })
+
+function submitClicked(element) {
+    var form = element.parentElement
+    form.submit();
+    // Get email from current form
+    var email = form.querySelector(":scope .text-box").value
+    // Prefill questionnaire with email
+    document.querySelectorAll(".thank-you a").forEach((a) => {a.href = "https://docs.google.com/forms/d/e/1FAIpQLSf_CSGif3vEyN7YZrHCj6nCHdGNc9G_fJWHhSwt8e7DMX9GTQ/viewform?usp=pp_url&entry.533643041=" + email;})
+    // Clear email values from all forms and swap forms for thank-you message
+    document.querySelectorAll("form .text-box").forEach((textBox) => {textBox.value = ""});
+    document.querySelectorAll(".email-form").forEach((emailForm) => {hideElement(emailForm)});
+    document.querySelectorAll(".thank-you").forEach((thankYou) => {showElement(thankYou)});
+}
+
+function handleTextBoxKeyPress(event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        submitClicked(event.target);
+    }
+}
 
 function showModal(modal) {
     showElement(modal);

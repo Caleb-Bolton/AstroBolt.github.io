@@ -18,7 +18,7 @@ main {
     padding-top: 1em;
 }
 
-h1, h2 {
+.hook-container h1, h2 {
     color: white;
 }
 
@@ -151,6 +151,17 @@ p {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 2em;
+    font-weight: 100;
+}
+
+.key-features-title {
+    margin-top: 2em;
 }
 
 .benefit-container {
