@@ -5,8 +5,15 @@
              "appIDs": [ "J2Y7FW72RW.engineering.bolton.SwiftUITest"],
              "components": [
                {
-                  "/": "/*",
-                  "comment": "Matches any URL whose path starts with /buy/"
+                  "/": "/down/*"
+               }
+             ]
+           },
+           {
+             "'appIDs": [ "J2Y7FW72RW.engineering.bolton.MediaCompanion" ],
+             "components": [
+               {
+                 "/": "/media-companion/*"
                }
              ]
            }
