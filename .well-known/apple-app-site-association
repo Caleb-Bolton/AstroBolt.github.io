@@ -2,18 +2,18 @@
   "applinks": {
       "details": [
            {
-             "appIDs": [ "J2Y7FW72RW.engineering.bolton.SwiftUITest"],
+             "'appID": "J2Y7FW72RW.engineering.bolton.MediaCompanion",
              "components": [
                {
-                  "/": "/down/*"
+                 "/": "/media-companion/*"
                }
              ]
            },
            {
-             "'appIDs": [ "J2Y7FW72RW.engineering.bolton.MediaCompanion" ],
+             "appID": "J2Y7FW72RW.engineering.bolton.SwiftUITest",
              "components": [
                {
-                 "/": "/media-companion/*"
+                  "/": "/down/*"
                }
              ]
            }
