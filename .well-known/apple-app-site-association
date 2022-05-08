@@ -2,7 +2,7 @@
   "applinks": {
       "details": [
            {
-             "'appID": "J2Y7FW72RW.engineering.bolton.MediaCompanion",
+             "appID": "J2Y7FW72RW.engineering.bolton.MediaCompanion",
              "components": [
                {
                  "/": "/media-companion/*"
